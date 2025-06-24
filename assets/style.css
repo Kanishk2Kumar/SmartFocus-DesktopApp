@@ -137,3 +137,9 @@ button:hover {
   transform: scale(1.03);
   background-color: #222;
 }
+
+.avatar {
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  color:#c8b8ff
+}
