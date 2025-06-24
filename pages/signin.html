@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sign In</title>
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <div class="background-grid">
-    <div class="card">
-      <h2 class="title">🗨️ SmartFocus</h2>
-      <p class="subtitle">Have Focused study sessions with smartprep</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://cdn.jsdelivr.net;"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="../renderer/signin.js"></script>
+  </head>
+  <body>
+    <div class="background-grid">
+      <div class="card">
+        <h2 class="title">🗨️ SmartFocus</h2>
+        <p class="subtitle">Have Focused study sessions with smartprep</p>
 
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="Your email address" />
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Your email address" />
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" />
+        </div>
+
+        <button id="loginBtn">Sign In</button>
+
+        <p class="signup">No account yet? <span>Sign Up</span></p>
       </div>
-
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" placeholder="Enter your password" />
-      </div>
-
-      <button id="loginBtn">Sign In</button>
-
-      <p class="signup">No account yet? <span>Sign Up</span></p>
     </div>
-  </div>
-
-  <script src="../renderer/signin.js"></script>
-
-</body>
+  </body>
 </html>
