@@ -1,0 +1,20 @@
+{
+  "name": "smart_focus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.5.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "@supabase/supabase-js": "^2.50.1",
+    "dotenv": "^16.5.0"
+  }
+}
